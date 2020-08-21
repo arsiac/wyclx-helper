@@ -23,7 +23,7 @@ Instance::Instance()
     Instance("", "", 0L, 0);
 }
 
-Instance *Instance::fromInitValue(const QString key, const QStringList &value)
+Instance *Instance::fromIniValue(const QString key, const QStringList &value)
 {
     if (value.length() != 4)
     {

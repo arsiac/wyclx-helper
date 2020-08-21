@@ -11,9 +11,9 @@ RewordInterface::RewordInterface()
     pointMap->insert("take", gc::Point(743, 464));
 
     rewordInstances = new RewordInstance*[3];
-    rewordInstances[0] = new RewordInstance(366, 284, 14606046L, 243, 205, 318, 461, 378, 363, 42, 21);
-    rewordInstances[1] = new RewordInstance(570, 284, 14606046L, 448, 205, 523, 461, 583, 363, 42, 21);
-    rewordInstances[2] = new RewordInstance(775, 284, 14606046L, 652, 205, 727, 461, 787, 363, 42, 21);
+    rewordInstances[0] = new RewordInstance(408, 257, 14540253L, 243, 205, 318, 461, 378, 363, 42, 21);
+    rewordInstances[1] = new RewordInstance(612, 257, 14540253L, 448, 205, 523, 461, 583, 363, 42, 21);
+    rewordInstances[2] = new RewordInstance(817, 257, 14540253L, 652, 205, 727, 461, 787, 363, 42, 21);
 
 }
 

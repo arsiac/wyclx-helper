@@ -19,14 +19,18 @@ SOURCES += \
     dm.cpp \
     game-interface/featurepoint.cpp \
     game-interface/gameinterface.cpp \
+    game-interface/maininterface.cpp \
+    game-interface/mainmenubuttonfeature.cpp \
     game-interface/rewordinstance.cpp \
     game-interface/rewordinterface.cpp \
     instance.cpp \
     main.cpp \
-    mainwindow.cpp \
     script/abstractscript.cpp \
     script/dailytaskscript.cpp \
     script/rewordscript.cpp \
+    settings.cpp \
+    widget/scriptwindow.cpp \
+    widget/settingwindow.cpp \
     window-controller/bitmap.cpp \
     window-controller/color.cpp \
     window-controller/point.cpp \
@@ -37,13 +41,17 @@ HEADERS += \
     dm.h \
     game-interface/featurepoint.h \
     game-interface/gameinterface.h \
+    game-interface/maininterface.h \
+    game-interface/mainmenubuttonfeature.h \
     game-interface/rewordinstance.h \
     game-interface/rewordinterface.h \
     instance.h \
-    mainwindow.h \
     script/abstractscript.h \
     script/dailytaskscript.h \
     script/rewordscript.h \
+    settings.h \
+    widget/scriptwindow.h \
+    widget/settingwindow.h \
     window-controller/bitmap.h \
     window-controller/color.h \
     window-controller/point.h \
@@ -51,12 +59,15 @@ HEADERS += \
     window-controller/windowcontrol.h
 
 FORMS += \
-    mainwindow.ui
+    widget/scriptwindow.ui \
+    widget/settingwindow.ui
 
 RC_FILE = resource.rc
 RC_ICONS= resource/images/qc.ico
 
 DISTFILES += \
+    LICENSE \
+    README.md \
     resource.rc \
     resource/images/down.png \
     resource/images/icon.jpg \
@@ -67,7 +78,8 @@ DISTFILES += \
     uac.manifest \
     lib/RegDll.dll \
     lib/dm.dll \
-    resource/reword_number.txt
+    resource/reword_number.txt \
+    update.md
 
 win32: LIBS += -lGdi32
 

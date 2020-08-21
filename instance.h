@@ -16,7 +16,7 @@ public:
     Instance(const QString &name, const QString &key, unsigned long rewordColor, int rewordBox);
     Instance();
 
-    static Instance *fromInitValue(const QString key, const QStringList &value);
+    static Instance *fromIniValue(const QString key, const QStringList &value);
     QStringList toIniValue();
     bool iniSave(QSettings *settings);
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>ScriptWindow</class>
+ <widget class="QWidget" name="ScriptWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -19,27 +19,46 @@
   <property name="maximumSize">
    <size>
     <width>600</width>
-    <height>400</height>
+    <height>700</height>
    </size>
   </property>
   <property name="cursor">
    <cursorShape>ArrowCursor</cursorShape>
   </property>
   <property name="windowTitle">
-   <string> 一梦江湖助手 v0.4</string>
+   <string> 一梦江湖助手 v0.5</string>
   </property>
   <property name="windowOpacity">
-   <double>0.950000000000000</double>
+   <double>1.000000000000000</double>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="centralwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>600</width>
+     <height>700</height>
+    </size>
+   </property>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
       <width>600</width>
-      <height>400</height>
+      <height>361</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>ArrowCursor</cursorShape>
@@ -211,7 +230,7 @@
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -222,7 +241,7 @@
       <widget class="QSpinBox" name="szhwRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>70</x>
+         <x>80</x>
          <y>20</y>
          <width>50</width>
          <height>20</height>
@@ -250,9 +269,9 @@
       <widget class="QLabel" name="jypyRewordLabel">
        <property name="geometry">
         <rect>
-         <x>140</x>
+         <x>170</x>
          <y>20</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -263,9 +282,9 @@
       <widget class="QLabel" name="jhxsRewordLabel">
        <property name="geometry">
         <rect>
-         <x>380</x>
+         <x>450</x>
          <y>20</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -278,7 +297,7 @@
         <rect>
          <x>10</x>
          <y>50</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -289,9 +308,9 @@
       <widget class="QLabel" name="wjszRewordLabel">
        <property name="geometry">
         <rect>
-         <x>140</x>
+         <x>170</x>
          <y>50</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -302,9 +321,9 @@
       <widget class="QLabel" name="tybRewordLabel">
        <property name="geometry">
         <rect>
-         <x>140</x>
+         <x>170</x>
          <y>80</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -315,9 +334,9 @@
       <widget class="QLabel" name="wrgRewordLabel">
        <property name="geometry">
         <rect>
-         <x>260</x>
+         <x>310</x>
          <y>50</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -328,9 +347,9 @@
       <widget class="QLabel" name="myszRewordLabel">
        <property name="geometry">
         <rect>
-         <x>380</x>
+         <x>450</x>
          <y>50</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -343,7 +362,7 @@
         <rect>
          <x>10</x>
          <y>80</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -354,7 +373,7 @@
       <widget class="QSpinBox" name="jypyRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>200</x>
+         <x>240</x>
          <y>20</y>
          <width>50</width>
          <height>20</height>
@@ -373,7 +392,7 @@
       <widget class="QSpinBox" name="jhxsRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>440</x>
+         <x>520</x>
          <y>20</y>
          <width>50</width>
          <height>20</height>
@@ -392,7 +411,7 @@
       <widget class="QSpinBox" name="xygRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>70</x>
+         <x>80</x>
          <y>50</y>
          <width>50</width>
          <height>20</height>
@@ -411,7 +430,7 @@
       <widget class="QSpinBox" name="wjszRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>200</x>
+         <x>240</x>
          <y>50</y>
          <width>50</width>
          <height>20</height>
@@ -430,7 +449,7 @@
       <widget class="QSpinBox" name="wrgRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>320</x>
+         <x>380</x>
          <y>50</y>
          <width>50</width>
          <height>20</height>
@@ -449,7 +468,7 @@
       <widget class="QSpinBox" name="myszRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>440</x>
+         <x>520</x>
          <y>50</y>
          <width>50</width>
          <height>20</height>
@@ -468,7 +487,7 @@
       <widget class="QSpinBox" name="lrmcRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>70</x>
+         <x>80</x>
          <y>80</y>
          <width>50</width>
          <height>20</height>
@@ -487,7 +506,7 @@
       <widget class="QSpinBox" name="tybRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>200</x>
+         <x>240</x>
          <y>80</y>
          <width>50</width>
          <height>20</height>
@@ -506,9 +525,9 @@
       <widget class="QLabel" name="yzhjRewordLabel">
        <property name="geometry">
         <rect>
-         <x>260</x>
+         <x>310</x>
          <y>20</y>
-         <width>50</width>
+         <width>61</width>
          <height>20</height>
         </rect>
        </property>
@@ -519,7 +538,7 @@
       <widget class="QSpinBox" name="yzhjRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>320</x>
+         <x>380</x>
          <y>20</y>
          <width>50</width>
          <height>20</height>
@@ -545,12 +564,12 @@
       <property name="title">
        <string>其他</string>
       </property>
-      <widget class="QLabel" name="scanDelayRewordLabel">
+      <widget class="QLabel" name="flashDelayRewordLabel">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>90</width>
+         <width>101</width>
          <height>20</height>
         </rect>
        </property>
@@ -558,10 +577,10 @@
         <string>刷新后扫描延时</string>
        </property>
       </widget>
-      <widget class="QSpinBox" name="scanDelayRewordSpinBox">
+      <widget class="QSpinBox" name="flashDelayRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>110</x>
+         <x>120</x>
          <y>20</y>
          <width>60</width>
          <height>20</height>
@@ -583,9 +602,9 @@
       <widget class="QLabel" name="popupDelayRewordLabel">
        <property name="geometry">
         <rect>
-         <x>190</x>
+         <x>210</x>
          <y>20</y>
-         <width>90</width>
+         <width>101</width>
          <height>20</height>
         </rect>
        </property>
@@ -596,7 +615,7 @@
       <widget class="QSpinBox" name="popupDelayRewordSpinBox">
        <property name="geometry">
         <rect>
-         <x>290</x>
+         <x>320</x>
          <y>20</y>
          <width>60</width>
          <height>20</height>
@@ -616,289 +635,219 @@
        </property>
       </widget>
      </widget>
-     <widget class="QLabel" name="rewordOutputLabel">
+     <widget class="QLabel" name="rewordResultLabel">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>330</y>
-        <width>411</width>
+        <x>5</x>
+        <y>290</y>
+        <width>585</width>
         <height>30</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-width: 0;
-border-radius: 5px;
-background-color: #333;
-color: #00ff00;
-padding: 2px 5px;</string>
+       <string notr="true">background-color:#333;border-width:0;border-radius:5px;color:#32CD32;</string>
       </property>
       <property name="text">
        <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="rewordStopButton">
-      <property name="geometry">
-       <rect>
-        <x>520</x>
-        <y>290</y>
-        <width>65</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-border:1px solid #ff4242;
-border-radius: 3px;
-background-color: #fff;
-color: #ff4242;
-}
-
-QPushButton:hover {
-background-color: #ff4242;
-color:#fff;
-}</string>
-      </property>
-      <property name="text">
-       <string>停止</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="rewordStartButton">
-      <property name="geometry">
-       <rect>
-        <x>440</x>
-        <y>330</y>
-        <width>145</width>
-        <height>30</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-border-width: 0;
-border-radius: 3px;
-background-color: #1E90FF;
-color: #FFF;
-}
-
-QPushButton:hover {
-background-color: #00BFFF;
-}</string>
-      </property>
-      <property name="text">
-       <string>开始</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="rewordResetWindowButton">
-      <property name="geometry">
-       <rect>
-        <x>440</x>
-        <y>290</y>
-        <width>65</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="whatsThis">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;重置窗口&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-border:1px solid #333;
-border-radius: 3px;
-background-color: #fff;
-color: #333;
-}
-
-QPushButton:hover {
-background-color: #333;
-color:#fff;
-}</string>
-      </property>
-      <property name="text">
-       <string>窗口重置</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="scanResultOutputLabel">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>290</y>
-        <width>341</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-width: 0;
-border-radius: 5px;
-background-color: #333;
-color: #00ff00;
-padding: 2px 5px;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="rewordScriptStateLabel">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>290</y>
-        <width>60</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-width: 0;
-border-radius: 5px;
-background-color: #ff4242;
-color: #fff;
-padding: 2px 5px;</string>
-      </property>
-      <property name="text">
-       <string>STOP</string>
-      </property>
-      <property name="textFormat">
-       <enum>Qt::PlainText</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="settingTab">
+    <widget class="QWidget" name="dailyTab">
      <attribute name="title">
-      <string>设置</string>
+      <string>日常</string>
      </attribute>
-     <widget class="QGroupBox" name="settingPulignGroupBox">
+     <widget class="QGroupBox" name="singleTaskGroupBox">
       <property name="geometry">
        <rect>
         <x>5</x>
-        <y>10</y>
-        <width>140</width>
-        <height>60</height>
+        <y>0</y>
+        <width>585</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="title">
-       <string>插件</string>
+       <string>单人</string>
       </property>
-      <widget class="QPushButton" name="registerPulignButton">
+      <widget class="QCheckBox" name="keyeCheckBox">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>50</width>
-         <height>23</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
-border:1px solid #333;
-border-radius: 3px;
-background-color: #fff;
-color: #333;
-}
-
-QPushButton:hover {
-background-color: #333;
-color:#fff;
-}</string>
-       </property>
-       <property name="text">
-        <string>注册</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="uinstallPulignButton">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
-         <y>20</y>
-         <width>50</width>
-         <height>23</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
-border:1px solid #ff4242;
-border-radius: 3px;
-background-color: #fff;
-color: #ff4242;
-}
-
-QPushButton:hover {
-background-color: #ff4242;
-color:#fff;
-}</string>
-       </property>
-       <property name="text">
-        <string>注销</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="settingRewordGroupBox">
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>10</y>
-        <width>431</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>悬赏</string>
-      </property>
-      <widget class="QLabel" name="seetingRewordNumberFontPathLabel">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>31</width>
+         <width>80</width>
          <height>20</height>
         </rect>
        </property>
        <property name="text">
-        <string>字库</string>
+        <string>课业</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="settingRewordNumberFontPathLineEdit">
+      <widget class="QCheckBox" name="pmlCheckBox">
        <property name="geometry">
         <rect>
-         <x>50</x>
+         <x>100</x>
          <y>20</y>
-         <width>371</width>
+         <width>80</width>
          <height>20</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">border: 1px solid #333;
-border-radius: 5px;
-padding-left:5px;</string>
+       <property name="text">
+        <string>缥缈录</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="bprwCheckBox">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>20</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
        </property>
        <property name="text">
-        <string>.\resource\reword_number.txt</string>
+        <string>帮派任务</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="mksyCheckBox">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>20</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>门客设宴</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="bpslCheckBox">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>20</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>帮派势力</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="bbzjCheckBox">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>20</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>白榜追击</string>
        </property>
       </widget>
      </widget>
     </widget>
+    <widget class="QWidget" name="shopTab">
+     <attribute name="title">
+      <string>珍宝阁</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="startOrStopScriptButton">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>370</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border-radius:3px;background-color:#1E90FF;color:#FFF;}QPushButton:hover{background-color:#00BFFF;}</string>
+    </property>
+    <property name="text">
+     <string>开始</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resetWindowButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>370</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;重置窗口&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {border:1px solid #333;border-radius: 3px;background-color: #fff;color: #333;}QPushButton:hover {background-color: #333;color:#fff;}</string>
+    </property>
+    <property name="text">
+     <string>窗口重置</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="logTextBowser">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>400</y>
+      <width>590</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#333;border-width:0;border-radius:5px;color:#32CD32;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openOrCloseLogButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>370</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {border:1px solid #333;border-radius: 3px;background-color: #fff;color: #333;}QPushButton:hover {background-color: #333;color:#fff;}</string>
+    </property>
+    <property name="text">
+     <string>LOG</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="settingButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>370</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {border:1px solid #333;border-radius: 3px;background-color: #fff;color: #333;}QPushButton:hover {background-color: #333;color:#fff;}</string>
+    </property>
+    <property name="text">
+     <string>设置</string>
+    </property>
    </widget>
   </widget>
  </widget>

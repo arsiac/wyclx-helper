@@ -27,14 +27,13 @@ public:
     QString getFontLibrary() const;
     void setFontLibrary(const QString &value);
     void setPopupDelay(int value);
-    void start() override;
-    void stop() override;
     int getDelay() const;
     int getPopupDelay() const;
+private:
+    void keyeTask();
 
 signals:
-    void scanResult(const QString &name, int number, int expect);
-    void setUiState(bool state);
+    void scanResult(const QString &msg);
 };
 
 #endif // REWORDSCRIPT_H

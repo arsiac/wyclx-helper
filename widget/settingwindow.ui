@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingWindow</class>
+ <widget class="QWidget" name="SettingWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#fefefe;border-radius:5px;border:1px solid #dedede;</string>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>498</width>
+      <height>298</height>
+     </rect>
+    </property>
+    <widget class="QGroupBox" name="PulignGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>140</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>插件</string>
+     </property>
+     <widget class="QPushButton" name="registerPulignButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>50</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+border:1px solid #333;
+border-radius: 3px;
+background-color: #fff;
+color: #333;
+}
+
+QPushButton:hover {
+background-color: #333;
+color:#fff;
+}</string>
+      </property>
+      <property name="text">
+       <string>注册</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="uinstallPulignButton">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>20</y>
+        <width>50</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+border:1px solid #ff4242;
+border-radius: 3px;
+background-color: #fff;
+color: #ff4242;
+}
+
+QPushButton:hover {
+background-color: #ff4242;
+color:#fff;
+}</string>
+      </property>
+      <property name="text">
+       <string>注销</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="rewordGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>80</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>悬赏</string>
+     </property>
+     <widget class="QLabel" name="rewordFontLibraryLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string>字库</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rewordFontLibraryInput">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>255</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid #333;
+border-radius: 5px;
+padding-left:5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="defaultGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>481</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>基本</string>
+     </property>
+     <widget class="QCheckBox" name="autoOpenLOGCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>默认打开LOG</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="DailyGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>481</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>日常</string>
+     </property>
+     <widget class="QLabel" name="dailyFontLibraryLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string>字库</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="dailyFontLibraryLabelInput">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>160</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid #333;
+border-radius: 5px;
+padding-left:5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dailyFlashDelayLabel">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string>界面刷新延迟</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="dailyFlashDelaySpinBox">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="suffix">
+       <string>ms</string>
+      </property>
+      <property name="prefix">
+       <string/>
+      </property>
+      <property name="minimum">
+       <number>200</number>
+      </property>
+      <property name="maximum">
+       <number>9999</number>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
